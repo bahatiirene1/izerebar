@@ -1,0 +1,23 @@
+{
+  "name": "izerebar",
+  "version": "1.0.0",
+  "description": "Rwandan Local Bar Management System - Accountability-First",
+  "main": "index.js",
+  "scripts": {
+    "db:start": "npx supabase start",
+    "db:stop": "npx supabase stop",
+    "db:reset": "npx supabase db reset",
+    "db:push": "npx supabase db push",
+    "db:diff": "npx supabase db diff",
+    "db:migrate": "npx supabase migration new",
+    "db:status": "npx supabase status",
+    "test": "echo \"Tests not configured yet\" && exit 0",
+    "test:db": "echo \"DB tests not configured yet\" && exit 0"
+  },
+  "keywords": ["bar", "management", "rwanda", "pos", "accountability"],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "supabase": "^2.70.5"
+  }
+}
