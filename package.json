@@ -11,13 +11,24 @@
     "db:diff": "npx supabase db diff",
     "db:migrate": "npx supabase migration new",
     "db:status": "npx supabase status",
-    "test": "echo \"Tests not configured yet\" && exit 0",
-    "test:db": "echo \"DB tests not configured yet\" && exit 0"
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:db": "vitest run tests/db",
+    "typecheck": "tsc --noEmit"
   },
-  "keywords": ["bar", "management", "rwanda", "pos", "accountability"],
+  "keywords": [
+    "bar",
+    "management",
+    "rwanda",
+    "pos",
+    "accountability"
+  ],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "supabase": "^2.70.5"
+    "@supabase/supabase-js": "^2.89.0",
+    "supabase": "^2.70.5",
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.16"
   }
 }
