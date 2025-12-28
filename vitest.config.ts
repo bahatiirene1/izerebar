@@ -8,5 +8,11 @@ export default defineConfig({
     setupFiles: ['tests/setup.ts'],
     testTimeout: 30000,
     hookTimeout: 30000,
+    // Run tests sequentially within files to avoid database conflicts
+    sequence: {
+      concurrent: false,
+    },
+    // Run test files sequentially (not in parallel)
+    fileParallelism: false,
   },
 });
